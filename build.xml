@@ -16,7 +16,7 @@
 
     <target name="phpcs"
             description="Generate checkstyle.xml using PHP_CodeSniffer">
-        <exec executable="phpcs">
+        <exec executable="C:\xampp\php\php.exe">
             <arg value="--report=checkstyle"/>
             <arg value="--standard=${basedir}/phpcs.xml"/>
             <arg value="--extensions=php"/>
