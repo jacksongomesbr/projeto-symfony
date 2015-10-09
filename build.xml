@@ -14,17 +14,8 @@
         <mkdir dir="${basedir}/build/logs"/>
     </target>
 
-    <target name="phpcs"
-            description="Generate checkstyle.xml using PHP_CodeSniffer">
-        <exec executable="phpcs" output="${basedir}/build/logs/checkstyle.xml">
-            <arg value="--report=checkstyle"/>
-            <arg value="--standard=${basedir}/phpcs.xml"/>
-            <arg value="--extensions=php"/>
-            <arg path="${source}"/>
-        </exec>
 
-    </target>
 
-    <target name="build" depends="clean,phpcs"/>
+    <target name="build" depends="clean"/>
 
 </project>
