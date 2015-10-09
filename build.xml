@@ -14,7 +14,7 @@
         <mkdir dir="${basedir}/build/logs"/>
     </target>
 
-    <target name="phpcs"
+    <target name="phpc"
             description="Generate checkstyle.xml using PHP_CodeSniffer">
         <exec executable="C:\xampp\php\php.exe" output="${basedir}/build/logs/checkstyle.xml">
             <arg value="--report=checkstyle"/>
