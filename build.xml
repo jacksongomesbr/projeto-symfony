@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="projeto-symfony" default="build">
-    <property name="source" value="C:\Users\rafaelov\Documents\projeto-symfony\web"/>
-    <property name="basedir" value='C:\Users\rafaelov\Documents\projeto-symfony'/>
+    <property name="source" value="c:\dev\projeto-symfony\web"/>
+    <property name="basedir" value='c:\dev\projeto-symfony'/>
 
     <target name="clean"
             description="Clean up and create artifact directories">
@@ -16,7 +16,7 @@
 
     <target name="phpcs"
             description="Generate checkstyle.xml using PHP_CodeSniffer">
-        <exec executable="C:\Users\rafaelov\Documents\projeto-symfony\vendor\squizlabs\php_codesniffer\scripts\phpcs.bat"
+        <exec executable="c:\dev\projeto-symfony\vendor\squizlabs\php_codesniffer\scripts\phpcs.bat"
               output="${basedir}/build/logs/checkstyle.xml">
             <arg value="--report=checkstyle"/>
             <arg value="--standard=${basedir}/phpcs.xml"/>
